@@ -59,6 +59,7 @@ usando obrigatoriamente estes nomes para os campos.
 inválidos, informando mensagem de erro explicativa no corpo do response.
 ● HTTP Status Code 409 (Conflict) em caso de CPF já cadastrado para outro
 aluno, informando mensagem de erro explicativa no corpo do response.
+
 ● RF03 - Atualização da Situação da Matrícula de Aluno
 Serviço para alterar/atualizar a situação da matrícula de determinado aluno.
 4
@@ -92,6 +93,7 @@ inválidos, informando mensagem de erro explicativa no corpo do response.
 ● HTTP Status Code 404 (Not Found) em caso de não ser encontrado registro
 com o código informado, retornando mensagem de erro explicativa no corpo
 do response.
+
 ● RF04 - Consulta de Alunos
 Serviço de consulta de alunos cadastrados.
 Definição do endpoint:
@@ -133,6 +135,7 @@ Response:
     "atendimentos": 0
     }
     ]
+    
 ● RF05 - Consulta de Aluno pelo Código
 Serviço de consulta de aluno pelo seu código identificador.
 Definição do endpoint:
@@ -156,6 +159,7 @@ Response:
 ● HTTP Status Code 404 (Not Found) em caso de não ser encontrado registro
 com o código informado, retornando mensagem de erro explicativa no corpo
 do response.
+
 ● RF06 - Exclusão de Aluno
 Serviço para excluir um aluno pelo código.
 Definição do endpoint:
@@ -167,6 +171,7 @@ Response:
 response body.
 ● HTTP Status Code 404 (Not Found) em caso de requisição com código não
 existente na base de dados.
+
 ● RF07 - Consulta de Professores
 Serviço de consulta de professores cadastrados, cuja entidade deve herdar de Pessoa
 e ter mais os seguintes atributos:
@@ -205,6 +210,7 @@ Response:
     "estado": "ATIVO"
     }
     ]
+    
 ● RF08 - Consulta de Pedagogos
 Serviço de consulta de pedagogos cadastrados, cuja entidade deve herdar de Pessoa e
 ter mais os seguintes atributos:
@@ -238,6 +244,7 @@ nome dos campos conforme exemplo abaixo).
     "atendimentos": 0
     }
     ]
+    
 ● RF09 - Realização de Atendimento Pedagógico
 Serviço de atendimento pedagógico, onde deve ser informado o código do aluno e
 código do pedagogo que participaram do atendimento.
