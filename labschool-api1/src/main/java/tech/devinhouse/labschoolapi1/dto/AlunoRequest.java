@@ -28,7 +28,7 @@ public class AlunoRequest {
     @NotNull(message = "{campo.obrigatorio}")
     private Long cpf;
 
-    @NotNull(message = "{campo.obrigatorio}")
+    @NotEmpty(message = "{campo.obrigatorio}")
     @ValorEnum(enumClass = EnumSituacaoAluno.class, message = "{campo.invalido}")
     private String situacao;
 
